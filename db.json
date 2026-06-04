@@ -1,0 +1,167 @@
+{
+  "proveedores": [
+    {
+      "id": 1,
+      "nombre": "MedSupply SA",
+      "telefono": "555-1001",
+      "email": "ventas@medsupply.com",
+      "activo": true
+    },
+    {
+      "id": 2,
+      "nombre": "Ortopedia Total",
+      "telefono": "555-1002",
+      "email": "info@ortopediatotal.com",
+      "activo": true
+    },
+    {
+      "id": 3,
+      "nombre": "TechMed Distribuidora",
+      "telefono": "555-1003",
+      "email": "contacto@techmed.com",
+      "activo": false
+    },
+    {
+      "id": 4,
+      "nombre": "Insumos Clínicos MX",
+      "telefono": "555-1004",
+      "email": "pedidos@insumosclinicos.mx",
+      "activo": true
+    }
+  ],
+  "categorias": [
+    {
+      "id": 1,
+      "nombre": "Equipos de Movilidad",
+      "descripcion": "Sillas de ruedas, muletas y andaderas",
+      "proveedorId": 2
+    },
+    {
+      "id": 2,
+      "nombre": "Equipos de Diagnóstico",
+      "descripcion": "Oxímetros, tensiómetros y termómetros",
+      "proveedorId": 1
+    },
+    {
+      "id": 3,
+      "nombre": "Material de Protección",
+      "descripcion": "Guantes, mascarillas y batas desechables",
+      "proveedorId": 4
+    },
+    {
+      "id": 4,
+      "nombre": "Equipos de Terapia",
+      "descripcion": "Nebulizadores y concentradores de oxígeno",
+      "proveedorId": 3
+    }
+  ],
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Silla de Ruedas Estándar",
+      "descripcion": "Silla plegable de aluminio con reposabrazos desmontables",
+      "precio": 2500,
+      "stock": 4,
+      "categoriaId": 1
+    },
+    {
+      "id": 2,
+      "nombre": "Oxímetro de Pulso Digital",
+      "descripcion": "Mide SpO2 y frecuencia cardiaca con pantalla OLED",
+      "precio": 450,
+      "stock": 2,
+      "categoriaId": 2
+    },
+    {
+      "id": 3,
+      "nombre": "Tensiómetro Digital de Brazo",
+      "descripcion": "Mide presión arterial automáticamente, memoria 90 lecturas",
+      "precio": 680,
+      "stock": 6,
+      "categoriaId": 2
+    },
+    {
+      "id": 4,
+      "nombre": "Guantes de Látex (caja 100)",
+      "descripcion": "Guantes desechables sin polvo, talla M",
+      "precio": 120,
+      "stock": 5,
+      "categoriaId": 3
+    },
+    {
+      "id": 5,
+      "nombre": "Nebulizador Ultrasónico",
+      "descripcion": "Para tratamiento respiratorio domiciliario, silencioso",
+      "precio": 890,
+      "stock": 2,
+      "categoriaId": 4
+    },
+    {
+      "id": 6,
+      "nombre": "Andadera con Ruedas",
+      "descripcion": "Marco de caminar con frenos de mano y asiento incorporado",
+      "precio": 1200,
+      "stock": 4,
+      "categoriaId": 1
+    }
+  ],
+  "ventas": [
+    {
+      "fecha": "2026-06-04T05:00:16.734Z",
+      "total": 3630,
+      "items": [
+        {
+          "productoId": 1,
+          "nombre": "Silla de Ruedas Estándar",
+          "precio": 2500,
+          "cantidad": 1
+        },
+        {
+          "productoId": 2,
+          "nombre": "Oxímetro de Pulso Digital",
+          "precio": 450,
+          "cantidad": 1
+        },
+        {
+          "productoId": 3,
+          "nombre": "Tensiómetro Digital de Brazo",
+          "precio": 680,
+          "cantidad": 1
+        }
+      ],
+      "id": 1
+    },
+    {
+      "fecha": "2026-06-04T05:18:11.166Z",
+      "total": 1360,
+      "items": [
+        {
+          "productoId": 3,
+          "nombre": "Tensiómetro Digital de Brazo",
+          "precio": 680,
+          "cantidad": 2
+        }
+      ],
+      "id": 2
+    },
+    {
+      "fecha": "2026-06-04T05:31:12.706Z",
+      "total": 4440,
+      "items": [
+        {
+          "productoId": 3,
+          "nombre": "Tensiómetro Digital de Brazo",
+          "precio": 680,
+          "cantidad": 3
+        },
+        {
+          "productoId": 6,
+          "nombre": "Andadera con Ruedas",
+          "precio": 1200,
+          "cantidad": 2
+        }
+      ],
+      "id": 3
+    }
+  ]
+}
